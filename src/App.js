@@ -1,23 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import SampleComponent from './materi-testing/SampleComponent';
+import SimpleShowHide from './materi-testing/SimpleShowHide';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SampleComponent/>
+      <SimpleShowHide />
+      <div>
+        <label > email</label>
+        <input onChange={console.log("oke")} value={"oriastan999@gmail.com"} type="text" name="" id="" placeholder='masukkan Email' />
+      </div>
+      <img src="" alt="test-img" />
+      <a data-testid="axvb">uwoooww</a>
     </div>
   );
 }

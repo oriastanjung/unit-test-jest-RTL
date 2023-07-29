@@ -31,7 +31,7 @@ describe("testing orias", () => {
   });
 
   test("Menyapa nama", () => {
-    expect(sapa("orias")).toBe("Halo oris");
+    expect(sapa("orias")).toBe("Halo orias");
   });
 
   const arr = ["a", 1, "c"];
