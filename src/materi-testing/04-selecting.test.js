@@ -15,8 +15,8 @@ describe("percobaan click event button dan selecting", () => {
 
   test("memastikan text setelah di klik sesuai", () => {
     render(<App />); // merender seluruh komponen react kita
-    const btn = screen.getByRole("button");
-    fireEvent.click(btn);
+    const btn = screen.getAllByRole("button");
+    fireEvent.click(btn[0]);
     const text = screen.getByText(/saya sedang muncul/i);
     expect(text).toBeInTheDocument();
   });
